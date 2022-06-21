@@ -1,40 +1,149 @@
-html.js .loader {
-background: none repeat scroll 0 0 #ffffff;
-bottom: 0;
-height: 100%;
-left: 0;
-position: fixed;
-right: 0;
-top: 0;
-width: 100%;
-z-index: 9999; }
-html.js .loader .loader_inner {
-background-image: url("../img/preloader.gif");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-background-color: #fff;
-height: 60px;
-width: 60px;
-margin-top: -30px;
-margin-left: -30px;
-left: 50%;
-top: 50%;
-position: absolute; }
-body {
-font-family: "RobotoRegular", sans-serif;
-font-weight: normal;
-font-size: 14px;
-min-width: 320px;
-position: relative;
-line-height: 1.6;
--webkit-font-smoothing: antialised;
-overflow-x: hidden; }
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-color: red; }
-body input:required:valid,
-body textarea:required:valid {
-color: green; }
-.hidden {
-display: none; }
+/* The navigation bar */
+.navbar {
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  overflow: hidden;
+  background-color: #32458C;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  font-size: 18px;
+  float: left;
+  display: block;
+  color: #9DAAD7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #9DAAD7;
+  color: #32458C;
+  border-radius: 10px;
+}
+
+/* Main content */
+.main {
+  margin-top: 55px; /* Add a top margin to avoid content overlay */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.tablegeneral { /*таблица в меню навигации */
+  margin: auto;
+}
+.tablemain {
+  margin: auto;
+  border-spacing: 10px;
+  text-align: left;
+}
+.table-contacts {
+  background: #E7E597;
+  text-align: center;
+  width: 100%;
+  border-color: black;
+  border: black;
+  margin: auto;
+}
+.td-logo {
+  text-align: right;
+  width: 40%;
+  border-color: black;
+  border: black;
+  background-color: #E7E597;
+  padding-right: 20px;
+}
+.td-name {
+  text-align: center;
+  /*width: 300px;*/
+  border-color: black;
+  border: black;
+}
+.td-contacts {
+/* text-align: left; */
+  width: 40%; 
+  text-align: left;
+  line-height: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: black;
+  border: black;
+  padding-left: 30px;
+  background-color: #E7E597;
+}
+.tdmain {
+  font-size: 18px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #32458C;
+  background: #9DAAD7;
+  padding: 16px;
+  width: 400px;
+}
+.tdmain a {
+  text-decoration: none;
+  color: #32458C;
+}
+.tdmain a:hover {
+  text-decoration: underline;
+  color: #32458C;
+}
+.contacts {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  /*padding: 0 30px;*/
+  line-height: 30px;
+}
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  background: rgb(196, 196, 196);
+  padding: 14px
+}
+h2 {
+  color: #32458C  
+}
+li a {
+  color: #016f0c;
+  text-decoration: none;
+}
+li a:hover {
+  color: #016f0c;
+  text-decoration: underline;
+}
+.table-footer {
+  background: #E7E597;
+  text-align: center;
+  width: 100%;
+  border-color: black;
+  border: none;
+  bottom: 0px;
+}
+.table-footer-blue {
+  background: #32458C;
+  text-align: center;
+  width: 100%;
+  border-color: black;
+  border: black;
+  bottom: 0px;
+  border: none;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+.copy {
+  font-size: 18px;
+  color: #9DAAD7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+.copy a {
+  color: #9DAAD7;
+  text-decoration: none;
+}
+.copy a:hover {
+  text-decoration: underline;
+}
